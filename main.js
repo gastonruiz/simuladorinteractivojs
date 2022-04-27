@@ -57,3 +57,22 @@ function calcularPresupuesto() {
     presupuestoTotal = autos * cantidadPanos * precioPano
     console.log("El costo de su presupuesto para autos marca " + marca + " es de: $" + presupuestoTotal)
 }
+//Arrays join
+console.group("join")
+const datosIngresados = [marca, autos, cantidadPanos];
+console.log(datosIngresados)
+console.log (datosIngresados.join(","))
+
+//indice
+console.group("Indices")
+console.log(datosIngresados[0] + " Marca del auto")
+console.log(datosIngresados[1] + " Cantidad de autos ingresados" )
+console.log(datosIngresados[2] + " Paños sumados")
+console.groupEnd(datosIngresados)
+
+
+//indexOf
+console.group("Indexof")
+console.log(datosIngresados.indexOf(marca))
+console.log(datosIngresados.indexOf(autos))
+console.log(datosIngresados.indexOf(cantidadPanos))
