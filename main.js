@@ -1,3 +1,7 @@
+let contenedordecosto = document.getElementById("divdecosto")
+
+
+
 let presupuestoTotal = 0
 let precioPano = 4000
 let autos = 0
@@ -55,7 +59,10 @@ function unidadesAReparar() {
 
 function calcularPresupuesto() {
     presupuestoTotal = autos * cantidadPanos * precioPano
+datos = document.createElement("h1")
+datos.innerHTML = `<h1>El costo de su presupuesto para autos marca ${marca} es de:$${presupuestoTotal}</h1>`
     console.log("El costo de su presupuesto para autos marca " + marca + " es de: $" + presupuestoTotal)
+ contenedordecosto.appendChild(datos)
 }
 //Arrays join
 console.group("join")
