@@ -64,6 +64,24 @@ datos.innerHTML = `<h1>El costo de su presupuesto para autos marca ${marca} es d
     console.log("El costo de su presupuesto para autos marca " + marca + " es de: $" + presupuestoTotal)
  contenedordecosto.appendChild(datos)
 }
+
+//Funcion de detalle de presupuesto
+
+function mostrarDetalle () {
+    document.getElementById("tablaDetalle").innerHTML = `<ul>
+    <li>El precio de cada paño es de: $${precioPano}</li>
+    <li>Cantidad de paños ingresados: ${cantidadPanos}</li>
+    <li>Cantidad de autos ingresados: ${autos}</li>
+    </ul>`
+  }
+  
+    const detalle = document.getElementById("obtenerDetalle")
+  detalle.onclick = mostrarDetalle
+
+
+
+
+
 //Arrays join
 console.group("join")
 const datosIngresados = [marca, autos, cantidadPanos];
